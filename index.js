@@ -123,7 +123,7 @@ class NodeStl {
   -this could cause problems
   */
    constructor(path, config = { density: 1.04 }) {
-  //   let buffer;
+     let buffer;
 
   //   if (Object.prototype.toString.call(path) === "[object String]") {
   //     const fs = require("fs"); // moved this as a step toward browser compatibility
