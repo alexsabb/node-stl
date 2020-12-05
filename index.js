@@ -118,19 +118,23 @@ class NodeStl {
    * @param {string|buffer} path
    * @param {object} config
    */
-  constructor(path, config = { density: 1.04 }) {
-    let buffer;
+  /**
+  going to remove this due to the fs command throwing errors in a webpack build
+  -this could cause problems
+  */
+  // constructor(path, config = { density: 1.04 }) {
+  //   let buffer;
 
-    if (Object.prototype.toString.call(path) === "[object String]") {
-      const fs = require("fs"); // moved this as a step toward browser compatibility
+  //   if (Object.prototype.toString.call(path) === "[object String]") {
+  //     const fs = require("fs"); // moved this as a step toward browser compatibility
 
-      buffer = fs.readFileSync(path);
-    } else {
-      buffer = path;
-    }
+  //     buffer = fs.readFileSync(path);
+  //   } else {
+  //     buffer = path;
+  //   }
 
-    this._parse(buffer, config);
-  }
+  //   this._parse(buffer, config);
+  // }
 
   /**
    * check if stl is binary vs ASCII
