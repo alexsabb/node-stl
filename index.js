@@ -1,4 +1,5 @@
 const Vector3 = require("./lib/vector3");
+require("buffer");
 
 /**
  * Measure properties of STLs
