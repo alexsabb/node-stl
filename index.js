@@ -122,7 +122,7 @@ class NodeStl {
   going to remove this due to the fs command throwing errors in a webpack build
   -this could cause problems
   */
-  // constructor(path, config = { density: 1.04 }) {
+   constructor(path, config = { density: 1.04 }) {
   //   let buffer;
 
   //   if (Object.prototype.toString.call(path) === "[object String]") {
@@ -130,11 +130,11 @@ class NodeStl {
 
   //     buffer = fs.readFileSync(path);
   //   } else {
-  //     buffer = path;
+       buffer = path;
   //   }
 
-  //   this._parse(buffer, config);
-  // }
+     this._parse(buffer, config);
+   }
 
   /**
    * check if stl is binary vs ASCII
